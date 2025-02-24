@@ -66,3 +66,71 @@
     padding: 1rem;
     border-radius: 1rem;/*round corners */
   }
+
+
+  /*this code is for responsive design */
+
+  /* 📌 Mobile Devices (Up to 480px) */
+  
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem;
+      height: 4rem;
+      line-height: 4rem;
+  }
+  
+  .choices {
+      flex-direction: column; /* Stack images vertically */
+      gap: 1.5rem;
+      margin-top: 3rem;
+  }
+  
+  .choice {
+      height: 120px;
+      width: 120px;
+  }
+  
+  img {
+      height: 100px;
+      width: 100px;
+  }
+
+  .score-board {
+      flex-direction: column; /* Stack score elements */
+      gap: 2rem;
+  }
+
+  #user-score, #enemy-score {
+      font-size: 3rem;
+  }
+
+  #msg {
+      font-size: 1.1rem;
+      padding: 0.8rem;
+  }
+}
+
+/* 📌 Tablets (481px to 768px) */
+@media (max-width: 768px) {
+  .choices {
+      gap: 2rem;
+  }
+
+  .choice {
+      height: 140px;
+      width: 140px;
+  }
+
+  img {
+      height: 130px;
+      width: 130px;
+  }
+
+  .score-board {
+      gap: 3rem;
+  }
+
+  #user-score, #enemy-score {
+      font-size: 3.5rem;
+  }
+}
