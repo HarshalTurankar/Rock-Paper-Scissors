@@ -81,8 +81,8 @@
   
   .choices {
       flex-direction: column; /* Stack images vertically */
-      gap: 1.5rem;
-      margin-top: 3rem;
+      gap: 1.1rem;
+      margin-top: 1.5rem;
   }
   
   .choice {
