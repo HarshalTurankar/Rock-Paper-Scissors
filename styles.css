@@ -96,7 +96,7 @@
   }
 
   .score-board {
-      flex-direction: column; /* Stack score elements */
+      flex-direction: row; /* Stack score elements */
       gap: 2rem;
   }
 
