@@ -3,7 +3,6 @@
     padding: 0;
     text-align: center;
   }
-  
   h1 {
     background-color: #081b31;
     color: #fff;
@@ -67,7 +66,7 @@
     border-radius: 1rem;/*round corners */
   }
 
- /* Highlight effect for computer's choice */
+  /* Highlight effect for computer's choice */
 /* Enhanced highlight effect for computer's choice */
 .highlight {
   box-shadow: 0px 0px 25px 8px rgba(255, 255, 0, 0.8); /* Softer, glowing yellow effect */
@@ -76,13 +75,16 @@
   border: 3px solid yellow; /* Adds a glowing border */
   background-color: rgba(255, 255, 0, 0.2); /* Light yellow overlay */
 }
+
+
+
   /*this code is for responsive design */
 
   /* 📌 Mobile Devices (Up to 480px) */
   
 @media (max-width: 480px) {
- h1 {
-    font-size: 1.3rem;  /* Reduce font size (manish's advise for header) */
+  h1 {
+    font-size: 1.3rem;  /* Reduce font size */
     height: auto;       /* Allow height to adjust dynamically */
     line-height: normal; /* Reset line-height for flexibility */
     padding: 0.5rem;    /* Add padding for spacing */
@@ -91,8 +93,8 @@
   
   .choices {
       flex-direction: column; /* Stack images vertically */
-      gap: 0.8rem;
-      margin-top: 1rem;
+      gap: 1.5rem;
+      margin-top: 3rem;
   }
   
   .choice {
@@ -101,22 +103,22 @@
   }
   
   img {
-      height: 70px;
-      width: 70px;
+      height: 100px;
+      width: 100px;
   }
 
   .score-board {
-      flex-direction: row; /* Stack score elements */
+      flex-direction: column; /* Stack score elements */
       gap: 2rem;
   }
 
   #user-score, #enemy-score {
-      font-size: 2rem;
+      font-size: 3rem;
   }
 
   #msg {
       font-size: 1.1rem;
-      padding: 0.5rem;
+      padding: 0.8rem;
   }
 }
 
@@ -144,3 +146,4 @@
       font-size: 3.5rem;
   }
 }
+
