@@ -13,6 +13,19 @@ const genEneChoice=() =>{//it's function to generate computer choice
     return options[randIdx];//return random value
 };
 
+// function to highlight computer move
+// it will remove effect after 1 second
+const highlightEnemyChoice = (enemyChoice) => {
+    const enemyElement = document.getElementById(enemyChoice);
+    if (enemyElement) {
+        enemyElement.classList.add("highlight"); // This adds a CSS class named "highlight" to the element.
+        //  The class makes the selected element glow, showing the computer's choice visually.
+        setTimeout(() => {// Remove highlight after 1 second
+            enemyElement.classList.remove("highlight");
+        }, 1000);
+    }
+};
+
 const drawGame= () =>{//function for draw result
     msg.innerText="The game ended in a draw! Try again!";
     msg.style.backgroundColor = "#081b31";//background will be constant as constant
