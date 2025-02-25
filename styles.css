@@ -93,32 +93,32 @@
   
   .choices {
       flex-direction: column; /* Stack images vertically */
-      gap: 1.5rem;
-      margin-top: 3rem;
+      gap: 1.3rem;
+      margin-top: 2rem;
   }
   
   .choice {
-      height: 120px;
-      width: 120px;
+      height: 100px;
+      width: 100px;
   }
   
   img {
       height: 100px;
-      width: 100px;
+      width:  100px;
   }
 
   .score-board {
-      flex-direction: column; /* Stack score elements */
+      flex-direction: row; /* Stack score elements */
       gap: 2rem;
   }
 
   #user-score, #enemy-score {
-      font-size: 3rem;
+      font-size: 2rem;
   }
 
   #msg {
       font-size: 1.1rem;
-      padding: 0.8rem;
+      padding: 0.5rem;
   }
 }
 
