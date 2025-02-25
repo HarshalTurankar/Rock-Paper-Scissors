@@ -67,17 +67,27 @@
     border-radius: 1rem;/*round corners */
   }
 
-
+ /* Highlight effect for computer's choice */
+/* Enhanced highlight effect for computer's choice */
+.highlight {
+  box-shadow: 0px 0px 25px 8px rgba(255, 255, 0, 0.8); /* Softer, glowing yellow effect */
+  transform: scale(1.1); /* Slightly enlarges the choice(make big ) */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border: 3px solid yellow; /* Adds a glowing border */
+  background-color: rgba(255, 255, 0, 0.2); /* Light yellow overlay */
+}
   /*this code is for responsive design */
 
   /* 📌 Mobile Devices (Up to 480px) */
   
 @media (max-width: 480px) {
-  h1 {
-      font-size: 1.5rem;
-      height: 4rem;
-      line-height: 4rem;
-  }
+ h1 {
+    font-size: 1.3rem;  /* Reduce font size (manish's advise for header) */
+    height: auto;       /* Allow height to adjust dynamically */
+    line-height: normal; /* Reset line-height for flexibility */
+    padding: 0.5rem;    /* Add padding for spacing */
+    word-wrap: break-word; /* Ensure text wraps properly */
+}
   
   .choices {
       flex-direction: column; /* Stack images vertically */
